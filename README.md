@@ -1,58 +1,11 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Oaeari Rajut merupakan aplikasi web sederhana yang dikembangkan sebagai bagian dari tugas Ujian Tengah Semester (UTS) pada mata kuliah Pemrograman Web. Aplikasi ini dirancang untuk membantu pengelolaan produk rajut handmade secara terstruktur dan mudah digunakan.
+Pengembangan aplikasi ini menggunakan framework Laravel dengan menerapkan konsep arsitektur Model-View-Controller (MVC). Melalui aplikasi ini, pengguna dapat melakukan simulasi login, melihat dashboard, mengakses daftar produk, serta melihat profil pengguna.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<img width="1887" height="935" alt="image" src="https://github.com/user-attachments/assets/ac511992-cb9a-46a1-810b-a62e683f9bb2" />
+Halaman login digunakan sebagai pintu masuk pengguna ke dalam sistem. Pada halaman ini, pengguna diminta untuk memasukkan username. Sistem akan melakukan validasi sederhana untuk memastikan input tidak kosong dan memiliki panjang minimal karakter. Setelah berhasil login, username akan disimpan ke dalam session dan digunakan untuk mengakses halaman lainnya.
+<img width="1880" height="932" alt="image" src="https://github.com/user-attachments/assets/6775d7a4-804d-4914-b339-c5c39d334e10" />
+Halaman dashboard menampilkan informasi utama setelah pengguna berhasil login. Pada halaman ini terdapat sapaan personal menggunakan username yang telah dimasukkan sebelumnya. Selain itu, dashboard juga menampilkan ringkasan data seperti jumlah produk, kategori, dan informasi singkat lainnya yang membantu pengguna memahami kondisi aplikasi secara umum.
+<img width="1894" height="926" alt="image" src="https://github.com/user-attachments/assets/240ce587-f004-4516-86cb-9131fc0e8412" />
+Halaman pengelolaan produk berfungsi untuk menampilkan daftar produk rajut yang tersedia. Data produk ditampilkan dalam bentuk grid kartu yang berisi informasi seperti nama produk, kategori, harga, dan stok. Halaman ini juga dilengkapi dengan fitur pencarian (search), filter kategori, serta pengurutan harga untuk memudahkan pengguna dalam menemukan produk yang diinginkan.
+<img width="1884" height="940" alt="image" src="https://github.com/user-attachments/assets/928e1340-bbbf-4a0a-8fd5-a8520ca4e99c" />
+Halaman profil menampilkan informasi pengguna yang sedang login. Username yang ditampilkan di halaman ini diambil dari session yang sama dengan dashboard, sehingga menunjukkan bahwa data berhasil dikelola dan digunakan secara konsisten antar halaman. Halaman ini berfungsi sebagai identitas pengguna dalam sistem.
